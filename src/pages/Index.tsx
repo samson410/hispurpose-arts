@@ -1,15 +1,52 @@
 import { motion } from "framer-motion";
+import { useState, useEffect, useRef} from "react";
 import { Link } from "react-router-dom";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Play, Award, Users, Star } from "lucide-react";
 
 const demoProjects = [
-  { id: 1, title: "Nebula Rising", category: "VFX" },
-  { id: 2, title: "Mechanism", category: "Product Animation" },
-  { id: 3, title: "Urban Pulse", category: "Motion Graphics" },
-  { id: 4, title: "Titan Forge", category: "Character Animation" },
-  { id: 5, title: "Lumina", category: "Cinematic Short" },
-  { id: 6, title: "Echo Chamber", category: "Explainer Video" },
+  {
+    id: 1,
+    title: "project 1",
+    category: "VFX",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775083013/excepu_project_ypk2zz.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775083013/excepu_project_ypk2zz.jpg",
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    category: "Product Animation",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069446/Mr_jonas_project_axo7s9.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_3/q_auto/f_auto/v1775069446/Mr_jonas_project_axo7s9.jpg",
+  },
+  {
+    id: 3,
+    title: "Project 3",
+    category: "Motion Graphics",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069407/FInal_RO_ani_xwrymp.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069407/FInal_RO_ani_xwrymp.jpg",
+  },
+  {
+    id: 4,
+    title: "project 4",
+    category: "VFX",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/3d_short_clip___03_rs5eo1.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/3d_short_clip___03_rs5eo1.jpg",
+  },
+  {
+    id: 5,
+    title: "Project 5",
+    category: "Product Animation",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114628/Prime_project_wzd4uz.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114628/Prime_project_wzd4uz.jpg",
+  },
+  {
+    id: 6,
+    title: "Project 6",
+    category: "Motion Graphics",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775116824/Cgi_Guitar_pedal_study_pp4twj.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775116824/Cgi_Guitar_pedal_study_pp4twj.jpg",
+  },
 ];
 
 const stats = [
@@ -19,6 +56,15 @@ const stats = [
 ];
 
 const Index = () => {
+  const [hoveredId, setHoveredId] = useState(null);
+  const videoRefs = useRef({});
+  const [activeVideo, setActiveVideo] = useState(null);
+  useEffect(() => {
+  demoProjects.forEach((p) => {
+    const video = document.createElement("video");
+    video.src = p.videoUrl;
+  });
+}, []);
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -99,11 +145,41 @@ const Index = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {demoProjects.map((project, i) => (
               <AnimatedSection key={project.id} delay={i * 0.1}>
-                <div className="group relative aspect-video rounded-xl overflow-hidden glass cursor-pointer hover:glow-primary transition-all duration-500">
-                  {/* Placeholder gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary to-muted" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+                  <div
+                  onClick={() => setActiveVideo(project)}
+                    onMouseEnter={() => {
+                      setHoveredId(project.id);
+                      videoRefs.current[project.id]?.play();
+                    }}
 
+                    onMouseLeave={() => {
+                      setHoveredId(null);
+                      videoRefs.current[project.id]?.pause();
+                    }}
+                    className="group relative aspect-video rounded-xl overflow-hidden glass cursor-pointer hover:glow-primary transition-all duration-500"
+                  >
+                  {/* Placeholder gradient */}
+                    <img
+                    src={project.thumbnail}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                    style={{
+                      opacity: hoveredId === project.id ? 0 : 1,
+                    }}
+                  />
+
+                  <video
+                    ref={(el) => (videoRefs.current[project.id] = el)}
+                    src={project.videoUrl}
+                    className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    style={{
+                      opacity: hoveredId === project.id ? 1 : 0,
+                    }}
+                  />
                   {/* Play icon */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center">
@@ -161,6 +237,25 @@ const Index = () => {
           </AnimatedSection>
         </div>
       </section>
+        {activeVideo && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setActiveVideo(null)}
+        >
+          <div
+            className="w-[90%] max-w-4xl aspect-video"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <video
+              src={activeVideo.videoUrl}
+              className="w-full h-full rounded-xl"
+              controls
+              autoPlay
+              playsInline
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
