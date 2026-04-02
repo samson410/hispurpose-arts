@@ -78,13 +78,13 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069298/Floating_stage_project_for_Mr_Dan_1_tgvmho.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069298/Floating_stage_project_for_Mr_Dan_1_tgvmho.jpg",
   },
-  {
-    id: 10,
-    title: "Project 10",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775069288/hispeaker_r4ybzb.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775069288/hispeaker_r4ybzb.jpg",
-  },
+  // {
+  //   id: 10,
+  //   title: "Project 10",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775069288/hispeaker_r4ybzb.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775069288/hispeaker_r4ybzb.jpg",
+  // },
   
   {
     id: 11,
@@ -190,13 +190,13 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775077720/wax__Final_v8uxuy.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_4/v1775077720/wax__Final_v8uxuy.jpg",
   },
-  {
-    id: 25,
-    title: "Project 25",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775077687/Solar_2D_project_odojh9.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775077687/Solar_2D_project_odojh9.jpg",
-  },
+  // {
+  //   id: 25,
+  //   title: "Project 25",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775077687/Solar_2D_project_odojh9.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775077687/Solar_2D_project_odojh9.jpg",
+  // },
   {
     id: 26,
     title: "Project 26",
@@ -225,13 +225,13 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775081878/3d_short_clip___06_sbac6e.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_2/v1775081878/3d_short_clip___06_sbac6e.jpg",
   },
-  {
-    id: 30,
-    title: "Project 30",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775081838/Copy_of_3d_rotation_Jewelry_vg3tlf.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_2/v1775081838/Copy_of_3d_rotation_Jewelry_vg3tlf.jpg",
-  },
+  // {
+  //   id: 30,
+  //   title: "Project 30",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775081838/Copy_of_3d_rotation_Jewelry_vg3tlf.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_2/v1775081838/Copy_of_3d_rotation_Jewelry_vg3tlf.jpg",
+  // },
   {
     id: 31,
     title: "Project 31",
@@ -239,20 +239,20 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775082009/Instagram_shot_for_Mr_Jack_vqwrkp.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_3/v1775082009/Instagram_shot_for_Mr_Jack_vqwrkp.jpg",
   },
-  {
-    id: 32,
-    title: "Project 32",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775082015/Product_animation_Grater_hpe2k1.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_2/v1775082015/Product_animation_Grater_hpe2k1.jpg",
-  },
-  {
-    id: 33,
-    title: "Project 33",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775082238/Project_Commercial_wyynet.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_2/q_auto/f_auto/v1775082238/Project_Commercial_wyynet.jpg",
-  },
+  // {
+  //   id: 32,
+  //   title: "Project 32",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775082015/Product_animation_Grater_hpe2k1.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_2/v1775082015/Product_animation_Grater_hpe2k1.jpg",
+  // },
+  // {
+  //   id: 33,
+  //   title: "Project 33",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775082238/Project_Commercial_wyynet.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_2/q_auto/f_auto/v1775082238/Project_Commercial_wyynet.jpg",
+  // },
   {
     id: 34,
     title: "Project 34",
@@ -281,20 +281,20 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775082594/Remix_case_ewtfu7.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_14/q_auto/f_auto/v1775082594/Remix_case_ewtfu7.jpg",
   },
-  {
-    id: 39,
-    title: "Project 39",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775082496/Stereo_Speaker_animation_vnmlmk.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_12.8/q_auto/f_auto/v1775082496/Stereo_Speaker_animation_vnmlmk.jpg",
-  },
-    {
-    id: 40,
-    title: "Project 40",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775082238/Project_Commercial_wyynet.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775082238/Project_Commercial_wyynet.jpg",
-  },
+  // {
+  //   id: 39,
+  //   title: "Project 39",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775082496/Stereo_Speaker_animation_vnmlmk.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_12.8/q_auto/f_auto/v1775082496/Stereo_Speaker_animation_vnmlmk.jpg",
+  // },
+  //   {
+  //   id: 40,
+  //   title: "Project 40",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775082238/Project_Commercial_wyynet.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775082238/Project_Commercial_wyynet.jpg",
+  // },
     {
     id: 41,
     title: "Project 41",
@@ -316,13 +316,13 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114622/3d_short_clip___05_q8ogpt.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114622/3d_short_clip___05_q8ogpt.jpg",
   },
-    {
-    id: 44,
-    title: "Project 44",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/Copy_of_4k_Realistic_Jewelry_for_Artpix_kvgitu.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/Copy_of_4k_Realistic_Jewelry_for_Artpix_kvgitu.jpg",
-  },
+  //   {
+  //   id: 44,
+  //   title: "Project 44",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/Copy_of_4k_Realistic_Jewelry_for_Artpix_kvgitu.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/Copy_of_4k_Realistic_Jewelry_for_Artpix_kvgitu.jpg",
+  // },
     {
     id: 45,
     title: "Project 45",
@@ -330,20 +330,20 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/3d_short_clip___03_rs5eo1.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/3d_short_clip___03_rs5eo1.jpg",
   },
-    {
-    id: 46,
-    title: "Project 46",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114628/Prime_project_wzd4uz.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114628/Prime_project_wzd4uz.jpg",
-  },
-    {
-    id: 47,
-    title: "Project 47",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775116824/Cgi_Guitar_pedal_study_pp4twj.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775116824/Cgi_Guitar_pedal_study_pp4twj.jpg",
-  },
+  //   {
+  //   id: 46,
+  //   title: "Project 46",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114628/Prime_project_wzd4uz.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114628/Prime_project_wzd4uz.jpg",
+  // },
+  //   {
+  //   id: 47,
+  //   title: "Project 47",
+  //   category: "Industrial Product",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775116824/Cgi_Guitar_pedal_study_pp4twj.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775116824/Cgi_Guitar_pedal_study_pp4twj.jpg",
+  // },
 
   
   
