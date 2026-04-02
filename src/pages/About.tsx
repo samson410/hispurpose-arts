@@ -55,7 +55,11 @@ const About = () => {
           <AnimatedSection>
             <div className="aspect-[4/3] rounded-2xl overflow-hidden glass">
               <div className="w-full h-full bg-gradient-to-br from-secondary via-muted to-card flex items-center justify-center">
-                <span className="text-6xl font-display font-bold text-gradient-primary opacity-40">HA</span>
+                <img
+                src="/sitelogo.png"
+                alt="About us"
+                className="w-full h-full object-cover"
+              />
               </div>
             </div>
           </AnimatedSection>

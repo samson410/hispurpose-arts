@@ -72,9 +72,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-display font-bold text-foreground mb-3">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed flex-1">{service.description}</p>
-                <button className="mt-6 text-sm text-primary font-medium hover:underline self-start">
+                {/* <button className="mt-6 text-sm text-primary font-medium hover:underline self-start">
                   Learn More →
-                </button>
+                </button> */}
               </div>
             </AnimatedSection>
           ))}

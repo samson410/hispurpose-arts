@@ -3,17 +3,67 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SocialIcons from "@/components/SocialIcons";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [toast, setToast] = useState<{ message: string; type: "success" | "error" } | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Form submitted! (Connect to a backend to handle submissions)");
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
+  if (loading) return;
+
+  if (!form.name || !form.email || !form.subject || !form.message) {
+    setToast({ message: "Please fill all fields", type: "error" });
+    setTimeout(() => setToast(null), 3000);
+    return;
+  }
+
+  setLoading(true);
+
+  try {
+    await emailjs.send(
+      "service_a7q2bjn",
+      "template_ik9p2vh",
+      {
+        from_name: form.name,
+        from_email: form.email,
+        subject: form.subject,
+        message: form.message,
+      },
+      "0xNo-_P4NFZ9oYaL5"
+    );
+
+    setToast({ message: "Message sent successfully!", type: "success" });
+
+    setForm({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  } catch (error) {
+    setToast({ message: "Failed to send message. Try again.", type: "error" });
+  } finally {
+    setLoading(false);
+    setTimeout(() => setToast(null), 3000);
+  }
+};
   return (
     <div className="min-h-screen pt-20">
+{toast && (
+  <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div
+      className={`px-6 py-4 rounded-xl text-white shadow-2xl text-center min-w-[250px] transition-all duration-300 ${
+        toast.type === "success" ? "bg-green-500" : "bg-red-500"
+      }`}
+    >
+      {toast.message}
+    </div>
+  </div>
+)}
       {/* Hero */}
       <section className="relative h-[40vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/8 via-background to-primary/5" />
@@ -93,10 +143,11 @@ const Contact = () => {
 
               <button
                 type="submit"
+                disabled={loading}
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:glow-primary transition-all duration-300 hover:scale-105 w-full justify-center md:w-auto"
               >
-                <Send size={18} />
-                Send Message
+               <Send size={18} />
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </AnimatedSection>
