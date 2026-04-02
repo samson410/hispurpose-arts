@@ -32,7 +32,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "glass-strong shadow-lg shadow-primary/5" : "bg-transparent"
+        scrolled ? "glass-strong shadow-lg shadow-primary/5" : "glass-strong shadow-lg shadow-primary/5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-20">
@@ -71,35 +71,50 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      <AnimatePresence>
-        {isOpen && (
+<AnimatePresence>
+  {isOpen && (
+    <>
+      {/* Overlay (click outside to close) */}
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={() => setIsOpen(false)}
+        className="fixed left-0 right-0 bottom-0 bg-black/30 backdrop-blur-sm md:hidden"
+        style={{ top: "80px", height: "calc(100vh - 80px)" }}
+      />
+
+      {/* Menu */}
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        exit={{ x: "100%" }}
+        transition={{ type: "tween", duration: 0.3 }}
+className="fixed top-20 right-0 h-[80vh] w-72 md:hidden flex flex-col px-8 pt-8 gap-6 bg-background/95 backdrop-blur-xl border-l border-border shadow-2xl overflow-y-auto z-50"      >
+        {navLinks.map((link, i) => (
           <motion.div
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "tween", duration: 0.3 }}
-            className="fixed top-20 right-0 bottom-0 w-72 glass-strong md:hidden flex flex-col px-8 pt-8 gap-6"
+            key={link.path}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: i * 0.05 }}
           >
-            {navLinks.map((link, i) => (
-              <motion.div
-                key={link.path}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: i * 0.05 }}
-              >
-                <Link
-                  to={link.path}
-                  className={`text-lg font-medium tracking-wide ${
-                    location.pathname === link.path ? "text-primary" : "text-muted-foreground"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              </motion.div>
-            ))}
+            <Link
+              to={link.path}
+              onClick={() => setIsOpen(false)}
+              className={`text-lg font-medium tracking-wide ${
+                location.pathname === link.path
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              }`}
+            >
+              {link.label}
+            </Link>
           </motion.div>
-        )}
-      </AnimatePresence>
+        ))}
+      </motion.div>
+    </>
+  )}
+</AnimatePresence>
     </motion.nav>
   );
 };
