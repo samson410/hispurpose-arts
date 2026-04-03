@@ -9,7 +9,7 @@ const Footer = () => (
       <p className="text-muted-foreground text-sm">
         © {new Date().getFullYear()} Hispurpose Arts. All rights reserved.
       </p>
-      <p className="text-muted-foreground text-sm">Website Developed By SamTech</p>
+      <p className="text-muted-foreground text-sm"><a href="https://dev-samtech-6q6h.vercel.app" target="_blank">Website Developed By SamTech</a></p>
       <div className="flex gap-4">
         {["Home", "About", "Services", "Portfolio", "Contact"].map((item) => (
           <Link
