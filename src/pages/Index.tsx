@@ -15,24 +15,24 @@ const demoProjects = [
   {
     id: 2,
     title: "Project 2",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069446/Mr_jonas_project_axo7s9.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/so_3/q_auto/f_auto/v1775069446/Mr_jonas_project_axo7s9.jpg",
+    category: "Video Explainer",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198301/Project_jvtnh5.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198301/Project_jvtnh5.jpg",
   },
-  {
+ {
     id: 3,
     title: "Project 3",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069407/FInal_RO_ani_xwrymp.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069407/FInal_RO_ani_xwrymp.jpg",
+    category: "CGI",
+    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197184/Cgi_banner_jfum87.mp4",
+    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197184/Cgi_banner_jfum87.jpg",
   },
-  {
-    id: 4,
-    title: "project 4",
-    category: "Industrial Product",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/3d_short_clip___03_rs5eo1.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114625/3d_short_clip___03_rs5eo1.jpg",
-  },
+      {
+  id: 4,
+  title: "Project 4",
+  category: "Product",
+  videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114622/3d_short_clip___05_q8ogpt.mp4",
+  thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775114622/3d_short_clip___05_q8ogpt.jpg",
+},
   {
     id: 5,
     title: "Project 5",
