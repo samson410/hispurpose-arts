@@ -10,7 +10,6 @@ const categories = [
   "CGI",
   "Video Explainer",
   "Character",
-  "VFX",
 ];
 
 
@@ -29,13 +28,13 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069446/Mr_jonas_project_axo7s9.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069446/Mr_jonas_project_axo7s9.jpg",
   },
-  {
-    id: 3,
-    title: "Project 3",
-    category: "CGI",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197184/Cgi_banner_jfum87.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197184/Cgi_banner_jfum87.jpg",
-  },
+  // {
+  //   id: 3,
+  //   title: "Project 3",
+  //   category: "CGI",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197184/Cgi_banner_jfum87.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197184/Cgi_banner_jfum87.jpg",
+  // },
   {
     id: 4,
     title: "Project 4",
@@ -43,13 +42,13 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069407/FInal_RO_ani_xwrymp.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069407/FInal_RO_ani_xwrymp.jpg",
   },
-  {
-    id: 5,
-    title: "Project 5",
-    category: "Video Explainer",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198301/Project_jvtnh5.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198301/Project_jvtnh5.jpg",
-  },
+  // {
+  //   id: 5,
+  //   title: "Project 5",
+  //   category: "Video Explainer",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198301/Project_jvtnh5.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198301/Project_jvtnh5.jpg",
+  // },
 
   {
     id: 6,
@@ -58,20 +57,20 @@ const portfolioItems = [
     videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775197543/Final_Ripple_Ani_Ht_zrmesq.mp4",
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775197543/Final_Ripple_Ani_Ht_zrmesq.jpg",
   },
-  {
-    id: 7,
-    title: "Project 7",
-    category: "CGI",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775197468/CGI_WORKS_with_Noel_vk9rr3.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775197468/CGI_WORKS_with_Noel_vk9rr3.jpg",
-  },
-  {
-    id: 8,
-    title: "Project 8",
-    category: "Video Explainer",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198308/Wall_project_for_nextwall_s0bzvk.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198308/Wall_project_for_nextwall_s0bzvk.jpg",
-  },
+  // {
+  //   id: 7,
+  //   title: "Project 7",
+  //   category: "CGI",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775197468/CGI_WORKS_with_Noel_vk9rr3.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775197468/CGI_WORKS_with_Noel_vk9rr3.jpg",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Project 8",
+  //   category: "Video Explainer",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198308/Wall_project_for_nextwall_s0bzvk.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775198308/Wall_project_for_nextwall_s0bzvk.jpg",
+  // },
   {
     id: 9,
     title: "Project 9",
@@ -80,13 +79,13 @@ const portfolioItems = [
     thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/q_auto/f_auto/v1775069298/Floating_stage_project_for_Mr_Dan_1_tgvmho.jpg",
   },
   
-  {
-    id: 10,
-    title: "Project 10",
-    category: "CGI",
-    videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197196/Trapstar_CGI_project_ixqbr2.mp4",
-    thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197196/Trapstar_CGI_project_ixqbr2.jpg",
-  },
+  // {
+  //   id: 10,
+  //   title: "Project 10",
+  //   category: "CGI",
+  //   videoUrl: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197196/Trapstar_CGI_project_ixqbr2.mp4",
+  //   thumbnail: "https://res.cloudinary.com/dxydu2ubk/video/upload/v1775197196/Trapstar_CGI_project_ixqbr2.jpg",
+  // },
   
   {
     id: 11,
